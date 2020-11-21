@@ -9,8 +9,11 @@
    <link rel="apple-touch-icon" href="asset/img/favicon.png">
    <link rel="icon" href="asset/img/favicon.png">
    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+   <link rel="prefetch" href="asset/js/plugin/json/full-emoji-list.json">
+   <link rel="preload" href="asset/js/plugin/json/full-emoji-list.json">
    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
    <link rel="stylesheet" href="asset/css/fontawsome.css">
+   <link rel="stylesheet" href="asset/js/plugin/reaction.css">
    <link rel="stylesheet" href="asset/css/style.css">
    <link rel="stylesheet" href="asset/css/responsive.css">
    <!-- this is for mordanizar js link -->
@@ -45,10 +48,167 @@
       </div>
    </section>
 
+   <!-- start video comment area -->
+   <section id="videoCommentArea">
+      <div class="container">
+         <div class="row">
+            <div class="col-xl-10 mx-auto">
+               <div class="toparea">
+                  <div class="row align-items-center">
+                     <div class="col-xl-7">
+                        <div class="postReaction">
+                           <ul>
+                              <li><a class="FB_reactions" data-reactions-type='horizontal' data-unique-id="1" data-emoji-class="">
+                                 <span> Like </span>
+                              </a></li>
+                              <li><a href="#">
+                                 <i class="fal fa-comment-alt"></i> Comment
+                              </a></li>
+                              <li><a href="#">
+                                 <i class="fal fa-share"></i> Share
+                              </a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="col-xl-5">
+                        <div class="postCount text-right">
+                           <ul>
+                              <li><a href="#"><img src="asset/img/icons/like.svg" alt=""> 2</a></li>
+                              <li><a href="#">123 Comments</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="commentBox">
+                  <div class="commentItem">
+                     <div class="user_image">
+                        <img src="asset/img/icons/user.svg" alt="">
+                     </div>
+                     <div class="user_content">
+                        <div class="content">
+                           <h5>Jhone Doe</h5>
+                           <p>This is comment from user This is comment from userThis is comment from userThis is comment from user</p>
+                        </div>
+                        <div class="info">
+                           <ul>
+                              <li><a href="#">Like</a></li>
+                              <li><a data-toggle="collapse" href="#rep1" role="button" aria-expanded="false" aria-controls="collapseExample">Reply</a></li>
+                              <li><a href="#">See Translation</a></li>
+                              <li><a href="#">5m</a></li>
+                           </ul>
+                        </div>
+                        <div class="replayComment">
+                           <div class="collapse" id="rep1">
+                             <form action="#">
+                                <input type="text" placeholder="Write your replay...">
+                             </form>
+                            </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="commentItem">
+                     <div class="user_image">
+                        <img src="asset/img/icons/user.svg" alt="">
+                     </div>
+                     <div class="user_content">
+                        <div class="content">
+                           <h5>Shisir Imran</h5>
+                           <p>This is comment from user This is comment from</p>
+                        </div>
+                        <div class="info">
+                           <ul>
+                              <li><a href="#">Like</a></li>
+                              <li><a data-toggle="collapse" href="#rep2" role="button" aria-expanded="false" aria-controls="collapseExample">Reply</a></li>
+                              <li><a href="#">See Translation</a></li>
+                              <li><a href="#">5m</a></li>
+                           </ul>
+                        </div>
+                        <div class="replayComment">
+                           <div class="collapse" id="rep2">
+                             <form action="#">
+                                <input type="text" placeholder="Write your replay...">
+                             </form>
+                            </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="commentItem">
+                     <div class="user_image">
+                        <img src="asset/img/icons/user.svg" alt="">
+                     </div>
+                     <div class="user_content">
+                        <div class="content">
+                           <h5>User name here</h5>
+                           <p>This is comment from user This is comment from name user</p>
+                        </div>
+                        <div class="info">
+                           <ul>
+                              <li><a href="#">Like</a></li>
+                              <li><a data-toggle="collapse" href="#rep3" role="button" aria-expanded="false" aria-controls="collapseExample">Reply</a></li>
+                              <li><a href="#">See Translation</a></li>
+                              <li><a href="#">5m</a></li>
+                           </ul>
+                        </div>
+                        <div class="replayComment">
+                           <div class="collapse" id="rep3">
+                             <form action="#">
+                                <input type="text" placeholder="Write your replay...">
+                             </form>
+                            </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="commentItem">
+                     <div class="user_image">
+                        <img src="asset/img/icons/user.svg" alt="">
+                     </div>
+                     <div class="user_content">
+                        <div class="content">
+                           <h5>Alex fardin</h5>
+                           <p>This is comment from user This is comment from name user and also</p>
+                        </div>
+                        <div class="info">
+                           <ul>
+                              <li><a href="#">Like</a></li>
+                              <li><a data-toggle="collapse" href="#rep4" role="button" aria-expanded="false" aria-controls="collapseExample">Reply</a></li>
+                              <li><a href="#">See Translation</a></li>
+                              <li><a href="#">5m</a></li>
+                           </ul>
+                        </div>
+                        <div class="replayComment">
+                           <div class="collapse" id="rep4">
+                             <form action="#">
+                                <input type="text" placeholder="Write your replay...">
+                             </form>
+                            </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="mainuserComment">
+                  <div class="userImge">
+                     <img src="asset/img/icons/user.svg" alt="">
+                  </div>
+                  <div class="writeBox">
+                     <form action="#">
+                        <input id="maincommentInput" type="text" placeholder="Leave your comment here..">
+                        <button id="emojipickerButton"><i class="fal fa-smile"></i></button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- end video comment area -->
 
    
    <!-- all javascript load here -->
    <script src="asset/js/vendor/jquery-3.3.1.min.js"></script>
+   <script src="asset/js/vendor/jquery-ui_1.12.1_.min.js"></script>
+   <script src="asset/js/plugin/reactions.js"></script>
+   <script src="asset/js/plugin/fgEmojiPicker.js"></script>
    <script src="asset/js/bootstrap.bundle.min.js"></script>
    <script src="asset/js/custom.js"></script>
 </body>
