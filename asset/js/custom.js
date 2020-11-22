@@ -7,6 +7,9 @@ $(document).ready(function() {
       //postUrl: "save.php"
     });
 
+    $('.FB_reactions2').facebookReactions({
+      //postUrl: "save.php"
+    });
 
     new FgEmojiPicker({
       trigger: ['#emojipickerButton'],

@@ -4,15 +4,27 @@
 		background:url(../plugin/emojis/normal.png) center left no-repeat;	
 		background-position: left 16px top 8px;
 	}
+
+	.FB_reactions2 {
+		background: url(../plugin/emojis/normal.png) center left no-repeat;
+		background-position: left 13px top 6px;
+		display: block;
+		background-size: 19px 23px;
+	}
 	
 	[data-emoji-class="like"]{background:url(../plugin/emojis/like.svg) center left no-repeat; background-size: 25px 25px; background-position: left 10px top 6px;}
-	[data-emoji-class="love"]{background:url(../plugin/emojis/love.svg) center left no-repeat; background-size: 25px 25px; background-position: left 10px top 6px;}
+	[data-emoji-class="love"]{
+		background:url(../plugin/emojis/love.svg) center left no-repeat; 
+		background-size: 25px 25px; 
+		background-position: left 10px top 6px;
+	}
 	[data-emoji-class="haha"]{background:url(../plugin/emojis/haha.svg) center left no-repeat;background-size: 25px 25px; background-position: left 10px top 6px;}
 	[data-emoji-class="wow"]{background:url(../plugin/emojis/wow.svg) center left no-repeat;background-size: 25px 25px; background-position: left 10px top 6px;}
 	[data-emoji-class="sad"]{background:url(../plugin/emojis/sad.svg) center left no-repeat;background-size: 25px 25px; background-position: left 10px top 6px;}
 	[data-emoji-class="angry"]{background:url(../plugin/emojis/angry.svg) center left no-repeat;background-size: 25px 25px; background-position: left 10px top 6px;}
 	
 	.FB_reactions span{display:block; padding:9px 0px 4px 40px; text-align:left;}
+	.FB_reactions2 span{display:block; padding:9px 0px 4px 40px; text-align:left;}
 
 
 
@@ -92,4 +104,10 @@
     display: block;
     padding: 1px 0px 4px 31px;
     text-align: left;
+}
+
+.FB_reactions2 span {
+    display: block;
+	text-align: left;
+	padding-left: 42px;
 }
