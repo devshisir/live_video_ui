@@ -111,3 +111,7 @@
 	text-align: left;
 	padding-left: 42px;
 }
+
+.FB_reactions2 ._bar{
+	top: -35px !important;
+}
