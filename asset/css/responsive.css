@@ -81,6 +81,12 @@
     #videoCommentArea .mainuserComment .writeBox {
         width: 100%;
     }
+    #videoCommentArea .commentBox .commentItem .user_content .commentReplayCount .comrplayItemContainer {
+        padding-left: 0px;
+        /* margin-left: -73px; */
+        position: relative;
+        left: -40px;
+    }
 }
 
 

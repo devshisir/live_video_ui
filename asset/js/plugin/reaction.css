@@ -22,6 +22,8 @@
 	[data-emoji-class="wow"]{background:url(../plugin/emojis/wow.svg) center left no-repeat;background-size: 25px 25px; background-position: left 10px top 6px;}
 	[data-emoji-class="sad"]{background:url(../plugin/emojis/sad.svg) center left no-repeat;background-size: 25px 25px; background-position: left 10px top 6px;}
 	[data-emoji-class="angry"]{background:url(../plugin/emojis/angry.svg) center left no-repeat;background-size: 25px 25px; background-position: left 10px top 6px;}
+
+	[data-emoji-class="care"]{background:url(../plugin/emojis/care.svg) center left no-repeat;background-size: 25px 25px; background-position: left 10px top 6px;}
 	
 	.FB_reactions span{display:block; padding:9px 0px 4px 40px; text-align:left;}
 	.FB_reactions2 span{display:block; padding:9px 0px 4px 40px; text-align:left;}
@@ -54,6 +56,10 @@
 	-webkit-animation:bounce .35s .1s;
 }
 ._bar ._inner img:nth-child(6) { 
+	-webkit-animation:bounce .4s .1s
+}
+
+._bar ._inner img:nth-child(7) { 
 	-webkit-animation:bounce .4s .1s
 }
 

@@ -26,6 +26,8 @@
 		var faces 	= '<img src="asset/js/plugin/emojis/like.svg" class="emoji" data-emoji-value="like" style="" />';
 		
 		faces = faces + '<img src="asset/js/plugin/emojis/love.svg" class="emoji" data-emoji-value="love" style="" />';
+
+		faces = faces + '<img src="asset/js/plugin/emojis/care.svg" class="emoji" data-emoji-value="care" style="" />';
 		
 		faces = faces + '<img src="asset/js/plugin/emojis/haha.svg" class="emoji" data-emoji-value="haha" style="" />';
 		
@@ -34,6 +36,8 @@
 		faces = faces + '<img src="asset/js/plugin/emojis/sad.svg" class="emoji" data-emoji-value="sad" style="" />';
 		
 		faces = faces + '<img src="asset/js/plugin/emojis/angry.svg" class="emoji" data-emoji-value="angry" style="" />';
+
+		
 		  
 		_react_html = _react_html + faces;
 		
