@@ -21,6 +21,13 @@ $(document).ready(function() {
   });
 
 
+    // disabled video click play or paus option
+    var videoNode = document.getElementById('liveVideoBox');
+    if (videoNode) {
+      videoNode.addEventListener('click', function(event){
+        event.preventDefault();
+      });
+    }
 
 
 

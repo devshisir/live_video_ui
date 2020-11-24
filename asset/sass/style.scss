@@ -18,7 +18,10 @@ html,body{
 /*------------------------
 main code start here 
 -------------------------*/
-
+video::-webkit-media-controls-play-button,
+video::-webkit-media-controls-pausebutton {
+    display: none;
+}
 
 #videoToparea{
     background-color: #000;
@@ -29,6 +32,7 @@ main code start here
             max-height: 100%;
             border-radius: 4px;
         }
+
         .topliveOption{
             position: absolute;
             top: 20px;
@@ -100,10 +104,16 @@ main code start here
                 li{
                     display: inline-block;
                     margin-left: 14px;
+                    position: relative;
+                    span{
+                        position: relative;
+                    }
                     a{
                         color: #b0b3b8;
                         font-weight: 600;
                         font-size: 13px;
+                        position: relative;
+                        z-index: 99999999;
                         &:hover{
                             text-decoration: underline;
                         }
@@ -111,6 +121,51 @@ main code start here
                     img{
                         height: 17px;
                         margin-right: 2px;
+                    }
+                }
+                .like-emo{
+                    span.like-icon{
+                        &:after{
+                            position: absolute;
+                            height: 40px;
+                            width: 40px;
+                            left: -35px;
+                            top: 1px;
+                            content: "";
+                            background-image: url(../js/plugin/emojis/like.svg);
+                            background-size: 20px 20px;
+                            background-repeat: no-repeat;
+                        }
+                    }
+                }
+                .love-emo{
+                    span.love-icon{
+                        &:before{
+                            position: absolute;
+                            height: 40px;
+                            width: 40px;
+                            left: -47px;
+                            top: 1px;
+                            content: "";
+                            background-image: url(../js/plugin/emojis/love.svg);
+                            background-size: 20px 20px;
+                            background-repeat: no-repeat;
+                        }
+                    }
+                }
+                .care-emo{
+                    span.care-icon{
+                        &:before{
+                            position: absolute;
+                            height: 40px;
+                            width: 40px;
+                            left: -59px;
+                            top: 1px;
+                            content: "";
+                            background-image: url(../js/plugin/emojis/care.svg);
+                            background-size: 20px 20px;
+                            background-repeat: no-repeat;
+                        }
                     }
                 }
             }
@@ -141,21 +196,58 @@ main code start here
                     position: relative;
                     .comentLikeCount{
                         position: absolute;
-                        right: 7px;
-                        bottom: -10px;
-                        width: fit-content;
-                        background-color: #202325f6;
-                        border-radius: 30px;
-                        padding: 2px 10px;
-                        box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
-                        span{
-                            img{
-                                height: 17px;
-                                margin-right: 2px;
-                            }
+                        right: 0px;
+                        bottom: -40px;
+                        text-align: right;
+                        span.number-like{
                             color: #b0b3b8;
                             font-weight: 600;
                             font-size: 12px;
+                        }
+                    }
+                    .comentLikeCount.like-emo{
+                        span.like-icon{
+                            &:before{
+                                position: absolute;
+                                height: 30px;
+                                width: 30px;
+                                right: 8px;
+                                top: 3px;
+                                content: "";
+                                background-image: url(../js/plugin/emojis/like.svg);
+                                background-size: 20px 20px;
+                                background-repeat: no-repeat;
+                            }
+                        }
+                    }
+                    .comentLikeCount.love-emo{
+                        span.love-icon{
+                            &:before{
+                                position: absolute;
+                                height: 30px;
+                                width: 30px;
+                                right: 20px;
+                                top: 3px;
+                                content: "";
+                                background-image: url(../js/plugin/emojis/love.svg);
+                                background-size: 20px 20px;
+                                background-repeat: no-repeat;
+                            }
+                        }
+                    }
+                    .comentLikeCount.care-emo{
+                        span.care-icon{
+                            &:before{
+                                position: absolute;
+                                height: 30px;
+                                width: 30px;
+                                right: 32px;
+                                top: 3px;
+                                content: "";
+                                background-image: url(../js/plugin/emojis/care.svg);
+                                background-size: 20px 20px;
+                                background-repeat: no-repeat;
+                            }
                         }
                     }
                     h5{

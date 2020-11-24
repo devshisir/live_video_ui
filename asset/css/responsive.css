@@ -50,6 +50,7 @@
     }
     #videoCommentArea .toparea .postCount {
         text-align: left !important;
+        padding-left: 53px;
     }
     #videoCommentArea .toparea {
         padding: 0px 0px;
@@ -86,6 +87,9 @@
         /* margin-left: -73px; */
         position: relative;
         left: -40px;
+    }
+    #videoCommentArea .commentBox .commentItem .user_content .content .comentLikeCount {
+        bottom: 76px;
     }
 }
 
