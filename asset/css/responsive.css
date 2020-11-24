@@ -91,6 +91,14 @@
     #videoCommentArea .commentBox .commentItem .user_content .content .comentLikeCount {
         bottom: 76px;
     }
+    .commentAction {
+        position: absolute;
+        right: 0px;
+        top: inherit;
+        bottom: -17px;
+        transform: translateY(0%);
+        z-index: 9999999999999999999;
+    }
 }
 
 

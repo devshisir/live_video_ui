@@ -341,7 +341,50 @@ video::-webkit-media-controls-pausebutton {
     position: relative !important;
     cursor: pointer;
 }
-
+.commentAction{
+    position: absolute;
+    right: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9999999999999999999;
+    .dropleft{
+        button{
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            border: none;
+            color: #b0b3b8;
+            background: #3A3B3C;
+            outline: none;
+        }
+    }
+    .dropdown-menu{
+        background-color: #3A3B3C;
+        padding: 10px 0px;
+        width: 200px;
+        z-index: 99999999999;
+        position: relative;
+        ul{
+            li{
+                display: block;
+                a{
+                    color: #b0b3b8;
+                    font-weight: 600;
+                    font-size: 13px;
+                    display: block;
+                    padding: 8px 15px;
+                    &:hover{
+                        background-color: #191a1b;
+                        color: #fff;
+                    }
+                    i{
+                        margin-right: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 
