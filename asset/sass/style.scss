@@ -7,7 +7,9 @@
 html,body{
     font-family: 'Open Sans', sans-serif;
 }
-
+.hide{
+    display: none;
+}
 
 
 
@@ -106,7 +108,13 @@ video::-webkit-media-controls-pausebutton {
                     margin-left: 14px;
                     position: relative;
                     span{
-                        position: relative;
+                        img{
+                            height: 20px;
+                            margin: 0px -6px;
+                        }
+                    }
+                    .hide{
+                        display: none;
                     }
                     a{
                         color: #b0b3b8;
@@ -114,60 +122,17 @@ video::-webkit-media-controls-pausebutton {
                         font-size: 13px;
                         position: relative;
                         z-index: 99999999;
+                        margin-left: 10px;
                         &:hover{
                             text-decoration: underline;
                         }
                     }
-                    img{
+                    >img{
                         height: 17px;
                         margin-right: 2px;
                     }
                 }
-                .like-emo{
-                    span.like-icon{
-                        &:after{
-                            position: absolute;
-                            height: 40px;
-                            width: 40px;
-                            left: -35px;
-                            top: 1px;
-                            content: "";
-                            background-image: url(../js/plugin/emojis/like.svg);
-                            background-size: 20px 20px;
-                            background-repeat: no-repeat;
-                        }
-                    }
-                }
-                .love-emo{
-                    span.love-icon{
-                        &:before{
-                            position: absolute;
-                            height: 40px;
-                            width: 40px;
-                            left: -47px;
-                            top: 1px;
-                            content: "";
-                            background-image: url(../js/plugin/emojis/love.svg);
-                            background-size: 20px 20px;
-                            background-repeat: no-repeat;
-                        }
-                    }
-                }
-                .care-emo{
-                    span.care-icon{
-                        &:before{
-                            position: absolute;
-                            height: 40px;
-                            width: 40px;
-                            left: -59px;
-                            top: 1px;
-                            content: "";
-                            background-image: url(../js/plugin/emojis/care.svg);
-                            background-size: 20px 20px;
-                            background-repeat: no-repeat;
-                        }
-                    }
-                }
+                
             }
         }
     }
@@ -199,57 +164,22 @@ video::-webkit-media-controls-pausebutton {
                         right: 0px;
                         bottom: -40px;
                         text-align: right;
-                        span.number-like{
+                        span{
+                            img{
+                                height: 20px;
+                                margin: 0px -6px;
+                            }
+                        }
+                        a{
                             color: #b0b3b8;
                             font-weight: 600;
-                            font-size: 12px;
+                            font-size: 13px;
+                            position: relative;
+                            z-index: 99999999;
+                            margin-left: 10px;
                         }
                     }
-                    .comentLikeCount.like-emo{
-                        span.like-icon{
-                            &:before{
-                                position: absolute;
-                                height: 30px;
-                                width: 30px;
-                                right: 8px;
-                                top: 3px;
-                                content: "";
-                                background-image: url(../js/plugin/emojis/like.svg);
-                                background-size: 20px 20px;
-                                background-repeat: no-repeat;
-                            }
-                        }
-                    }
-                    .comentLikeCount.love-emo{
-                        span.love-icon{
-                            &:before{
-                                position: absolute;
-                                height: 30px;
-                                width: 30px;
-                                right: 20px;
-                                top: 3px;
-                                content: "";
-                                background-image: url(../js/plugin/emojis/love.svg);
-                                background-size: 20px 20px;
-                                background-repeat: no-repeat;
-                            }
-                        }
-                    }
-                    .comentLikeCount.care-emo{
-                        span.care-icon{
-                            &:before{
-                                position: absolute;
-                                height: 30px;
-                                width: 30px;
-                                right: 32px;
-                                top: 3px;
-                                content: "";
-                                background-image: url(../js/plugin/emojis/care.svg);
-                                background-size: 20px 20px;
-                                background-repeat: no-repeat;
-                            }
-                        }
-                    }
+
                     h5{
                         color: #b0b3b8;
                         font-weight: 600;
