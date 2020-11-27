@@ -3,6 +3,7 @@
 		
 		background:url(../plugin/emojis/normal.png) center left no-repeat;	
 		background-position: left 16px top 8px;
+		position: relative !important;
 	}
 
 	.FB_reactions2 {
